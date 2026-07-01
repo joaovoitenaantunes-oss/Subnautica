@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria Subnautica</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        background: #0b1b2b;
+        color: white;
+    }
+
+    header {
+     text-align:center;
+     padding:60px 20px;
+     background: linear-gradient(90deg, #00c6ff, #0072ff);
+     box-shadow:0 0 30px #000;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        margin-top: 10px;
+        opacity: 0.8;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .titulo{
+        font-family:'Orbitron',sans-serif;
+        color:#ffffff;
+        font-size:32px;
+        margin:40px 20px 10px;
+        border-left:5px solid #ffffff;
+        padding-left:15px;
+    }
+
+    .subtitulo{
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #b0c7d6;
+        margin: 5px 20px 20px;
+        opacity: 0.8;
+    }
+
+    .card {
+        background: #112a45;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.3s;
+        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #00c6ff;
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        margin: 10px;
+    }
+
+    .card p {
+        margin: 0 10px 15px;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        opacity: 0.6;
+        font-size: 12px;
+    }
+
+    nav{
+    text-align: center;
+    padding: 15px;
+    background: #081725;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #00c6ff;
+}
+
+.mapa{
+    margin:40px auto 60px;
+    max-width:1100px;
+    background:#112a45;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,198,255,.3);
+    transition:.3s;
+}
+
+.mapa:hover{
+    box-shadow:0 0 30px #00c6ff;
+    transform:scale(1.01);
+}
+
+.mapa img{
+    width:100%;
+    display:block;
+    border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>GALERIA</h1>
+    <p>Explorando o fundo do oceano.</p>
+</header>
+
+<nav>
+    <a href="index.html">Aba inicial</a>
+    <a href="Galeria.html">Galeria</a>
+    <a href="Historia.html">História</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<h2 class="titulo">Leviatãs</h2>
+<p class="subtitulo">As maiores criaturas do planeta 4546B.</p>
+<div class="gallery">
+
+    <div class="card">
+        <img src="Reaper.jpg" alt="">
+        <h3>Reaper Leviathan</h3>
+        <p>O predador mais temido de 4546B. Extremamente agressivo, usa suas enormes mandíbulas para agarrar e destruir qualquer coisa que encontrar.</p>
+    </div>
+
+    <div class="card">
+        <img src="Ghost.jpg" alt="">
+        <h3>Ghost Leviathan</h3>
+        <p>Uma criatura gigantesca que habita principalmente o Void. Seu corpo translúcido e brilhante faz dele um dos leviatãs mais misteriosos e perigosos do planeta.</p>
+    </div>
+
+    <div class="card">
+        <img src="Sea Treader.jpg" alt="">
+        <h3>Sea Treader Leviathan</h3>
+        <p>Um leviatã pacífico que caminha lentamente pelo fundo do oceano. Sua passagem libera recursos valiosos do solo.</p>
+    </div>
+
+    <div class="card">
+        <img src="Sea Dragon.jpg" alt="">
+        <h3>Sea Dragon Leviathan</h3>
+        <p>O maior predador vivo de 4546B. Habita as zonas de lava e é capaz de lançar enormes bolas de fogo contra suas presas.</p>
+    </div>
+
+</div>
+
+<h2 class="titulo">Biomas</h2>
+<p class="subtitulo">Diferentes regiões do oceano, cada uma com perigos, recursos e criaturas únicas.</p>
+<div class="gallery">
+
+    <div class="card">
+        <img src="Shallows.jpg" alt="">
+        <h3>Safe Shallows</h3>
+        <p>O bioma onde a aventura começa. Águas rasas, recursos abundantes e criaturas geralmente pacíficas fazem deste o local ideal para os primeiros dias de sobrevivência.</p>
+    </div>
+
+    <div class="card">
+        <img src="Crash Zone.jpg" alt="">
+        <h3>Crash Zone</h3>
+        <p>Área que cerca os destroços da Aurora. Rica em fragmentos, mas extremamente perigosa devido aos multiplos Leviatãs patrulhando a região.</p>
+    </div>
+
+    <div class="card">
+        <img src="Lost River.jpg" alt="">
+        <h3>Lost River</h3>
+        <p>Uma enorme rede de cavernas subterrâneas coberta por rios de substâncias tóxicas. Esconde recursos raros, fósseis antigos e criaturas das profundezas.</p>
+    </div>
+
+    <div class="card">
+        <img src="Lava Zone.jpg" alt="">
+        <h3>Lava Zone</h3>
+        <p>A região mais profunda e quente do planeta 4546B que pode ser acessada. Lar dos Sea Dragon Leviathans e de formações vulcânicas, é onde ficam importantes segredos da história de Subnautica.</p>
+    </div>
+
+</div>
+
+<h2 class="titulo">Veículos</h2>
+<p class="subtitulo">Máquinas usadas para exploração e sobrevivência no planeta.</p>
+<div class="gallery">
+
+    <div class="card">
+        <img src="Seamoth.jpg" alt="">
+        <h3>Seamoth</h3>
+        <p>Um pequeno submarino de exploração rápido e ágil. Ideal para explorar as regiões rasas e médias do planeta com segurança.</p>
+    </div>
+
+    <div class="card">
+        <img src="Cyclops.jpg" alt="">
+        <h3>Cyclops</h3>
+        <p>O maior submarino pilotável de Subnautica. Funciona como uma base móvel, permitindo longas expedições pelas profundezas.</p>
+    </div>
+
+    <div class="card">
+        <img src="Prawn.jpg" alt="">
+        <h3>Prawn Suit</h3>
+        <p>Um traje de exploração e mineração resistente. Projetado para suportar grandes profundidades e enfrentar ambientes extremamente hostis.</p>
+    </div>
+
+    <div class="card">
+        <img src="Neptune.jpeg" alt="">
+        <h3>Neptune Escape Rocket</h3>
+        <p>Foguete construído para escapar do planeta 4546B. Sua conclusão marca o fim da jornada em Subnautica.</p>
+    </div>
+
+</div>
+
+<h2 class="titulo">História</h2>
+<p class="subtitulo">Os eventos que aconteceram em 4546B, incluindo naves, civilizações antigas e tentativas de resgate.</p>
+<div class="gallery">
+
+    <div class="card">
+        <img src="Aurora.jpg" alt="">
+        <h3>Aurora</h3>
+        <p>A gigantesca nave da Alterra que caiu no planeta 4546B após ser atingida pelo sistema de quarentena alienígena. Seus destroços escondem recursos valiosos e revelam parte da história do jogo.</p>
+    </div>
+
+    <div class="card">
+        <img src="Sunbeam.jpg" alt="">
+        <h3>Sunbeam</h3>
+        <p>Uma nave de resgate que responde ao sinal de socorro da Aurora. Ao tentar pousar no planeta, é destruída pelo sistema de quarentena alienígena.</p>
+    </div>
+
+    <div class="card">
+        <img src="Precursors.jpg" alt="">
+        <h3>Precursors (Architects)</h3>
+        <p>Uma antiga civilização alienígena extremamente avançada. Suas instalações e tecnologias espalhadas por 4546B escondem os mistérios da bactéria Kharaa e do sistema de quarentena do planeta.</p>
+    </div>
+
+    <div class="card">
+        <img src="Degasi.jpg" alt="">
+        <h3>Degasi</h3>
+        <p>Uma nave que caiu em 4546B anos antes da Aurora. Os sobreviventes construíram bases pelo planeta, deixando registros que ajudam a revelar os acontecimentos anteriores à chegada do protagonista.</p>
+    </div>
+
+</div>
+
+<h2 class="titulo">Mapa</h2>
+<p class="subtitulo">Visão geral do planeta 4546B, mostrando os principais biomas e pontos de interesse.</p>
+
+<div class="mapa">
+    <img src="Map.jpg" alt="Mapa de Subnautica">
+</div>
+
+<footer>
+    © 2026 Unknown Worlds Entertainment. Todos os direitos reservados.
+
+Subnautica e todos os seus nomes, logotipos, personagens, imagens e conteúdos relacionados são propriedades da Unknown Worlds Entertainment. Este site foi desenvolvido apenas para fins educacionais e sem fins lucrativos.
+
+</footer>
+
+</body>
+</html>
